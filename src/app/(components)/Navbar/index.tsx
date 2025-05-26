@@ -1,5 +1,6 @@
 "use client";
-import { Bell, Menu, Sun } from "lucide-react";
+import { Bell, Menu, Settings, Sun } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -44,6 +45,9 @@ const Navbar = () => {
             <span className=" font-semibold">Hania G</span>
           </div>
         </div>
+        <Link href="/settings">
+          <Settings className=" cursor-pointer text-gray-500 " size={24} />
+        </Link>
       </div>
     </div>
   );
